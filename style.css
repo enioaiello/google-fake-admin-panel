@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    font-size: 2.5vh;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 15%;
+}
+
+span {
+    color: blue;
+    text-decoration: underline;
+}
