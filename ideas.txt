@@ -1,0 +1,3 @@
+Idées admin panel:
+-	Redirection vers panneau de configuration.
+-	Création de comptes temporaires.
