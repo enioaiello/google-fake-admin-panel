@@ -1,11 +1,5 @@
-let usersLists = [
-    {
-        "users": "root",
-        "password": "root"
-    }
-]
+let signUpData = document.querySelector("#signUp");
 
-usersLists.push({
-    users: "",
-    password: ""
-})
+
+
+signUpData.addEventListener('click', signUp);
