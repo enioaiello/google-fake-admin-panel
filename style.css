@@ -21,4 +21,9 @@ img {
 span {
     color: blue;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    cursor: help;
 }
