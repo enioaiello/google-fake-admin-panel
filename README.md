@@ -12,18 +12,19 @@ Click on the "Code" botuon on the project page and click on "OPen in GitHub Desk
 # Login
 Log in to the default account using the following account:
 ```
-enioaiello
+root
 ```
 ```
-flash
+toor
 ```
 Or register (available soon) for free with a temporary account.
 # Credits
 This page has no real credits, however the favicon and the image files belong to Google.
 # Features
-- Create a free temporary account to test the project
+- Create a free temporary account to test the project `in a futur update`
 - Login with a default account 
 - Support button to contact me in case of bugs 
+- Access to some features in beta using the debug console
 # Powered by
 - HTML
 - CSS
