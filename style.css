@@ -50,6 +50,10 @@ main {
     padding: 5%;
 }
 
+div {
+    padding: 5%;
+}
+
 .clear {
     clear: both;
 }
