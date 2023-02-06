@@ -8,6 +8,10 @@ body {
     font-size: 2.5vh;
     width: 80%;
     margin: 0;
+}
+
+.mainDiv {
+    width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,11 +53,21 @@ main {
     width: 75%;
     background-color: royalblue;
     color: white;
-    padding: 5%;
+    padding: 7% 5%;
 }
 
 div {
     padding: 5%;
+}
+
+input {
+    text-align: left;
+    padding: 1%;
+}
+
+input[type=submit] {
+    width: 10%;
+    text-align: center;
 }
 
 .clear {
@@ -66,4 +80,18 @@ div {
 
 #loadingPage {
     cursor: wait;
+}
+
+#loginLogo {
+    width: 10%;
+}
+
+.error {
+    background-color: #D33F49;
+    color: #D8E2DC;
+    border-radius: 5px;
+    width: 35%;
+    height: 5vh;
+    margin: 1% auto;
+    padding: 1%;
 }
