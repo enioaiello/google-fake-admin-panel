@@ -39,5 +39,3 @@ function hideErrorText() {
     passwordError.classList.add("none");
 }
 formSubmit.addEventListener("click", login);
-
-

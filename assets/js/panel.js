@@ -21,7 +21,7 @@ const userNameDisplay = () => {
     let token = localStorage.getItem("token")
     for(const i of user){
         if(token === null){
-            window.location.assign("../../../index.html");
+            window.location.assign("../../index.html");
         }else if(i.token === token){
             welcomeText.innerHTML = "Welcome " + i.user + "-user!";
         }
