@@ -25,7 +25,7 @@ This page has no real credits, however the favicon and the image files belong to
 - Login with a default account 
 - Support button to contact me in case of bugs 
 - Access to some features in beta using the debug console
-# Powered by
-- HTML
-- CSS
-- JS
+# Build with
+![html](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
+# Acknowledgements
+**MatisBevilacqua** [Github](https://github.com/MatisBevilacqua) : For his help with some functions of the site (stable version 1)
