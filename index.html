@@ -27,12 +27,12 @@
         cookieBanner.style.textAlign = "center";
         let acceptButton = document.createElement("button");
         acceptButton.innerHTML = "Agree";
+        acceptButton.style.padding = 
         acceptButton.style.marginLeft = "10px";
         acceptButton.addEventListener("click", function() {
         document.cookie = "cookies_accepted=true; max-age=31536000; path=/";
         cookieBanner.style.display = "none";
         });
-
         cookieBanner.appendChild(acceptButton);
         document.body.appendChild(cookieBanner);
     </script>

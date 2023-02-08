@@ -37,7 +37,11 @@
             } else {
                 passwordError.classList.remove("none");
                 console.log("Login: denied!");
+                setTimeout(hideErrorText, 3000);
             }
+        }
+        function hideErrorText() {
+            passwordError.classList.add("none");
         }
         formSubmit.addEventListener("click", login);
     </script>
