@@ -3,28 +3,25 @@ let logoutText = document.querySelector(".logoutText");
 let welcomeText = document.querySelector("#welcomeText");
 let timer = 6;
 
-const user = [
-    {
-        user: "root",
-        password: "toor",
-        token: "5665d6zd46da465z465d4a56"
-    },
+const user = {
+    "5665d6zd46da465z465d4a56": {
+        name: "root",
+        password: "toor"
+    }, 
 
-    {
-        user: "enio",
-        password: "1234",
-        token: "5685d6zd46da465o465d4a56"   
-    }
-]
+    "5665d6zd22da445z465d4a56": {
+        name: "enio",
+        password: "toor"
+    },    
+}
 
 const userNameDisplay = () => {
     let token = localStorage.getItem("token")
-    for(const i of user){
-        if(token === null){
-            window.location.assign("../../index.html");
-        }else if(i.token === token){
-            welcomeText.innerHTML = "Welcome " + i.user + "-user!";
-        }
+    console.log(user[token])
+    if(token === null){
+        window.location.assign("../../index.html");
+    }else if(user[token]) {
+        welcomeText.innerHTML = "Welcome " + user[token].name + "-user!";
     }
 }   
 
