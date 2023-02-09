@@ -17,11 +17,11 @@ const user = {
 
 const userNameDisplay = () => {
     let token = localStorage.getItem("token")
-    console.log(user[token])
+    // console.log(user[token])
     if(token === null){
         window.location.assign("../../index.html");
     }else if(user[token]) {
-        welcomeText.innerHTML = "Welcome " + user[token].name + "-user!";
+        welcomeText.innerHTML = "Welcome " + user[token].name + "!";
     }
 }   
 
