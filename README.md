@@ -26,4 +26,4 @@ This page has no real credits, however the favicon and the image files belong to
 - Support button to contact me in case of bugs 
 - Access to some features in beta using the debug console
 # Acknowledgements
-[MatisBevilacqua](https://github.com/MatisBevilacqua), For his help with some functions of the site
+[MatisBevilacqua](https://github.com/MatisBevilacqua), for his help with some functions of the site
