@@ -9,23 +9,21 @@
     <link rel="icon" href="../img/favicon.png">
 </head>
 <body>
-    <div class="mainDiv">
+    <div id="loadingPage" class="mainDiv">
         <img src="../img/favicon.png" alt="Google Admin Panel logo">
         <h1>Google Admin Panel</h1>
-        <p>An error occured, please try again later!</p>
-        <p id="errorHome"></p>
+        <p>Connected!</p>
+        <!-- <object type="image/gif" data="example.gif">
+            <img src="../img/loading.webp" alt="Loading">
+        </object> -->
+        <p>Please wait, your browser will automatically redirect you to the panel.</p>
     </div>
     <script>
-        let errorHome = document.querySelector("#errorHome");
-        let timer = 4;
-        function returnToHome() {
-            window.location.href = "../../index.html";
+        console.log("Login: redirection!");
+        setTimeout(redirection, 3000);
+        function redirection() {
+            window.location.href = "./panel.html";
         }
-        setTimeout(returnToHome, 4000);
-        setInterval( function(){
-                timer -= 1;
-                errorHome.innerHTML = "Returning to home in " + timer + " seconds";
-            }, 1000)
     </script>
 </body>
 </html>

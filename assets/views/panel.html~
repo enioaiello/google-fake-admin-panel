@@ -29,28 +29,13 @@
         </nav>
     </header>
     <main>
-        <h1>Debug Mode</h1>
-        <p>For the moment some features available on this page are not available.</p>
-        <p>To access the console, open the "Inspect" menu on your browser.</p>
+        <h1 id="welcomeText">Welcome!</h1>
+        <p>This panel is a student project to test some features of JavaScript, HTML and CSS.</p>
+        <p>To learn more about its creator, click <a href="https://enioaiello.github.io/" style="color: white; text-decoration: underline;">here</a>.</p>
+        <p>Also note that a beta version is being created. It will allow you to create temporary user accounts, to have access to a better interface and more features.</p>
+        <p>If you need help, contact me <a href="mailto:aielloenio@icloud.com" style="color: white; text-decoration: underline;">here</a>!</p>
     </main>
     <div class="clear"></div>
-    <script>
-        let logoutButton = document.querySelector(".logout");
-        let logoutText = document.querySelector(".logoutText");
-        let timer = 6;
-        function logout() {
-            window.location.assign("../../index.html");
-        }
-        function confirmLogout() {
-            setInterval( function(){
-                timer -= 1;
-                logoutText.innerHTML = "Logout in " + timer + " seconds";
-            }, 1000)
-            logoutText.classList.remove("none");
-            console.log("Security: Logout in 10 seconds");
-            setTimeout(logout, 5000);
-        }
-        logoutButton.addEventListener("click", confirmLogout);
-    </script>
+    <script src="../js/panel.js"></script>
 </body>
 </html>
