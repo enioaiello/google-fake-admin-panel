@@ -8,7 +8,7 @@ Use the following command via Git Bash or Windows Terminal
 git clone https://github.com/enioaiello/google-fake-admin-panel.git
 ```
 ## Github Desktop
-Click on the "Code" botuon on the project page and click on "OPen in GitHub Desktop", make sure it is installed on your computer. If it is not on your computer, download it [here](https://desktop.github.com).
+Click on the "Code" button the project page and click on "Open in GitHub Desktop", make sure it is installed on your computer. If it is not on your computer, download it [here](https://desktop.github.com).
 # Login
 Log in to the default account using the following account:
 ```
