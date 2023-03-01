@@ -28,7 +28,7 @@ const userNameDisplay = () => {
 userNameDisplay()
 
 const logout = () => {
-    window.location.assign("../../../index.html");
+    window.location.assign("../../index.html");
     localStorage.removeItem("token")
 }
 
