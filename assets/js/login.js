@@ -23,6 +23,19 @@ const redirect = () => {
     window.location.href = "success.html";
 }
 
+const
+    verifyToken = () => {
+    const token = localStorage.getItem("token")
+    console.log(token)
+    for(const i of user){
+        if(i.token === token){
+            redirect()
+        }
+    }
+}
+
+verifyToken()
+
 const login = (loginParameters) => {
     loginParameters.preventDefault();
     for(const i of user){
