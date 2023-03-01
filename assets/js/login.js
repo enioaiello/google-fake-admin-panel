@@ -1,9 +1,10 @@
 let access = document.querySelector("#access");
 let loginContent = document.querySelector("input");
-let formSubmit = document.querySelector("input[type=submit]");
+let loginButton = document.querySelector("#loginButton");
 let passwordError = document.querySelector("#errorPassword");
 let usernameInput = document.querySelector("#usernameInput");
 let passwordInput = document.querySelector("#passwordInput");
+let registerButton = document.querySelector("#registerButton");
 
 const user = [
     {
@@ -14,8 +15,8 @@ const user = [
 
     {
         user: "enio",
-        password: "1234",
-        token: "5685d6zd46da465o465d4a56"   
+        password: "Sezfet97",
+        token: "5685d6zd46da465o465d4a56"
     }
 ]
 
@@ -26,7 +27,7 @@ const redirect = () => {
 const
     verifyToken = () => {
     const token = localStorage.getItem("token")
-    console.log(token)
+    // console.log(token)
     for(const i of user){
         if(i.token === token){
             redirect()
@@ -51,4 +52,31 @@ const login = (loginParameters) => {
 function hideErrorText() {
     passwordError.classList.add("none");
 }
-formSubmit.addEventListener("click", login);
+
+function generate_token(length){
+    // Code has been take from stackoverflow
+    var a = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".split("");
+    var b = [];
+    for (var i=0; i<length; i++) {
+        var j = (Math.random() * (a.length-1)).toFixed(0);
+        b[i] = a[j];
+    }
+    return b.join("");
+}
+
+function register() {
+    let newUsername = prompt("Enter a username");
+    let newPassword = prompt("Enter a password");
+    let newUser = [
+        {
+            user: newUsername,
+            password: newPassword,
+            token: generate_token(23)
+        }
+    ]
+    user.push(newUser);
+    console.log(user);
+}
+
+loginButton.addEventListener("click", login);
+registerButton.addEventListener("click", register);
