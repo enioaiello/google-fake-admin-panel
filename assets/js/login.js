@@ -6,7 +6,7 @@ let usernameInput = document.querySelector("#usernameInput");
 let passwordInput = document.querySelector("#passwordInput");
 let registerButton = document.querySelector("#registerButton");
 
-const user = [
+let user = [
     {
         user: "root",
         password: "toor",
